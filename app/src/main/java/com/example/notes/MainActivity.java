@@ -1,6 +1,8 @@
 package com.example.notes;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -16,9 +18,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-TextView result = findViewById(R.id.result);
-       String sum = ("Rahul");
-        result.setText(sum);
+
+        Handler handleer = new Handler();
+        handleer.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(MainActivity.this,MainActivity2.class);
+                startActivity(intent);
+                finish();
+            }
+        },4000);
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -28,3 +37,5 @@ TextView result = findViewById(R.id.result);
         });
     }
 }
+
+//// hello captai git sikhaado😢
