@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_notes"
+    android:orientation="vertical"
+    android:background="#5AE0DD"
+    android:padding="14dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD NOTES"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#B2440B"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:gravity="center|top">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:orientation="vertical"
+            android:padding="9dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg"
+                android:textColorHint="#4D4C4C"
+                android:id="@+id/title"
+                android:textColor="@color/black"
+                android:layout_marginBottom="6dp"
+                android:padding="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:hint="Description"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="top"
+                android:background="@drawable/bg"
+                android:textColorHint="#4D4C4C"
+                android:layout_marginBottom="6dp"
+                android:id="@+id/description"
+                android:padding="10dp"/>
+
+
+            <Button
+                android:id="@+id/AddNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D72F2F"
+                android:textColor="@color/white"
+                android:text="Add Notes"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
